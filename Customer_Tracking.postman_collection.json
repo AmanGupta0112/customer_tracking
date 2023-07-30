@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "06ce048a-57c3-46b3-aa03-0bf68bf4f318",
+		"name": "Customer_Tracking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17614070"
+	},
+	"item": [
+		{
+			"name": "Create Customer constact info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phone_number\": \"8005406733\",\n    \"email\": \"aman@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Identify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phone_number\": \"8299131501\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/identify/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"identify",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
