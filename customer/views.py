@@ -39,8 +39,6 @@ def identify_contact(request):
 
     # Assuming you have already set up the Contact model as described in the previous discussions
     if request.method == 'POST':
-        import pdb
-        pdb.set_trace()
         # Get the JSON data from the request
         data = json.loads(request.body)
         email = data.get('email')
